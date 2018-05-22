@@ -2786,6 +2786,438 @@ public abstract class ZAttrAccount  extends MailTarget {
     }
 
     /**
+     * This ldap attribute stores the account user city information
+     *
+     * @return zimbraAccountCity, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public String getAccountCity() {
+        return getAttr(Provisioning.A_zimbraAccountCity, null, true);
+    }
+
+    /**
+     * This ldap attribute stores the account user city information
+     *
+     * @param zimbraAccountCity new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public void setAccountCity(String zimbraAccountCity) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountCity, zimbraAccountCity);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user city information
+     *
+     * @param zimbraAccountCity new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public Map<String,Object> setAccountCity(String zimbraAccountCity, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountCity, zimbraAccountCity);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user city information
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public void unsetAccountCity() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountCity, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user city information
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public Map<String,Object> unsetAccountCity(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountCity, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @return zimbraAccountDateOfBirth, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public String getAccountDateOfBirth() {
+        return getAttr(Provisioning.A_zimbraAccountDateOfBirth, null, true);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @param zimbraAccountDateOfBirth new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public void setAccountDateOfBirth(String zimbraAccountDateOfBirth) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfBirth, zimbraAccountDateOfBirth);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @param zimbraAccountDateOfBirth new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public Map<String,Object> setAccountDateOfBirth(String zimbraAccountDateOfBirth, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfBirth, zimbraAccountDateOfBirth);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public void unsetAccountDateOfBirth() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfBirth, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public Map<String,Object> unsetAccountDateOfBirth(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfBirth, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @return zimbraAccountDateOfRetirement, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public String getAccountDateOfRetirement() {
+        return getAttr(Provisioning.A_zimbraAccountDateOfRetirement, null, true);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @param zimbraAccountDateOfRetirement new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public void setAccountDateOfRetirement(String zimbraAccountDateOfRetirement) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfRetirement, zimbraAccountDateOfRetirement);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @param zimbraAccountDateOfRetirement new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public Map<String,Object> setAccountDateOfRetirement(String zimbraAccountDateOfRetirement, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfRetirement, zimbraAccountDateOfRetirement);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public void unsetAccountDateOfRetirement() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfRetirement, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public Map<String,Object> unsetAccountDateOfRetirement(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDateOfRetirement, "");
+        return attrs;
+    }
+
+    /**
+     * designation
+     *
+     * @return zimbraAccountDepartment, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public String getAccountDepartment() {
+        return getAttr(Provisioning.A_zimbraAccountDepartment, null, true);
+    }
+
+    /**
+     * designation
+     *
+     * @param zimbraAccountDepartment new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public void setAccountDepartment(String zimbraAccountDepartment) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDepartment, zimbraAccountDepartment);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * designation
+     *
+     * @param zimbraAccountDepartment new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public Map<String,Object> setAccountDepartment(String zimbraAccountDepartment, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDepartment, zimbraAccountDepartment);
+        return attrs;
+    }
+
+    /**
+     * designation
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public void unsetAccountDepartment() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDepartment, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * designation
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public Map<String,Object> unsetAccountDepartment(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountDepartment, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @return zimbraAccountExpDate, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public String getAccountExpDate() {
+        return getAttr(Provisioning.A_zimbraAccountExpDate, null, true);
+    }
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @param zimbraAccountExpDate new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public void setAccountExpDate(String zimbraAccountExpDate) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountExpDate, zimbraAccountExpDate);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @param zimbraAccountExpDate new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public Map<String,Object> setAccountExpDate(String zimbraAccountExpDate, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountExpDate, zimbraAccountExpDate);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public void unsetAccountExpDate() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountExpDate, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public Map<String,Object> unsetAccountExpDate(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountExpDate, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @return zimbraAccountMiddleName, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public String getAccountMiddleName() {
+        return getAttr(Provisioning.A_zimbraAccountMiddleName, null, true);
+    }
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @param zimbraAccountMiddleName new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public void setAccountMiddleName(String zimbraAccountMiddleName) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountMiddleName, zimbraAccountMiddleName);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @param zimbraAccountMiddleName new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public Map<String,Object> setAccountMiddleName(String zimbraAccountMiddleName, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountMiddleName, zimbraAccountMiddleName);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public void unsetAccountMiddleName() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountMiddleName, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public Map<String,Object> unsetAccountMiddleName(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraAccountMiddleName, "");
+        return attrs;
+    }
+
+    /**
      * account status. active - active lockout - no login until lockout
      * duration is over, mail delivery OK. locked - no login, mail delivery
      * OK. maintenance - no login, no delivery(lmtp server returns 4.x.x
@@ -24070,6 +24502,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     }
 
     /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @return zimbraIsEmployee, or false if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public boolean isIsEmployee() {
+        return getBooleanAttr(Provisioning.A_zimbraIsEmployee, false, true);
+    }
+
+    /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @param zimbraIsEmployee new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public void setIsEmployee(boolean zimbraIsEmployee) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsEmployee, zimbraIsEmployee ? TRUE : FALSE);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @param zimbraIsEmployee new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public Map<String,Object> setIsEmployee(boolean zimbraIsEmployee, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsEmployee, zimbraIsEmployee ? TRUE : FALSE);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public void unsetIsEmployee() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsEmployee, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public Map<String,Object> unsetIsEmployee(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsEmployee, "");
+        return attrs;
+    }
+
+    /**
      * whether it is an external user account
      *
      * @return zimbraIsExternalVirtualAccount, or false if unset
@@ -24282,6 +24786,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     public Map<String,Object> unsetIsMobileGatewayProxyAccount(Map<String,Object> attrs) {
         if (attrs == null) attrs = new HashMap<String,Object>();
         attrs.put(Provisioning.A_zimbraIsMobileGatewayProxyAccount, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @return zimbraIsNewUser, or false if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public boolean isIsNewUser() {
+        return getBooleanAttr(Provisioning.A_zimbraIsNewUser, false, true);
+    }
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @param zimbraIsNewUser new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public void setIsNewUser(boolean zimbraIsNewUser) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsNewUser, zimbraIsNewUser ? TRUE : FALSE);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @param zimbraIsNewUser new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public Map<String,Object> setIsNewUser(boolean zimbraIsNewUser, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsNewUser, zimbraIsNewUser ? TRUE : FALSE);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public void unsetIsNewUser() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsNewUser, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public Map<String,Object> unsetIsNewUser(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraIsNewUser, "");
         return attrs;
     }
 
@@ -25399,6 +25975,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     public Map<String,Object> unsetMailAllowReceiveButNotSendWhenOverQuota(Map<String,Object> attrs) {
         if (attrs == null) attrs = new HashMap<String,Object>();
         attrs.put(Provisioning.A_zimbraMailAllowReceiveButNotSendWhenOverQuota, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @return zimbraMailAllowedServiceAccess, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public String getMailAllowedServiceAccess() {
+        return getAttr(Provisioning.A_zimbraMailAllowedServiceAccess, null, true);
+    }
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @param zimbraMailAllowedServiceAccess new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public void setMailAllowedServiceAccess(String zimbraMailAllowedServiceAccess) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailAllowedServiceAccess, zimbraMailAllowedServiceAccess);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @param zimbraMailAllowedServiceAccess new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public Map<String,Object> setMailAllowedServiceAccess(String zimbraMailAllowedServiceAccess, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailAllowedServiceAccess, zimbraMailAllowedServiceAccess);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public void unsetMailAllowedServiceAccess() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailAllowedServiceAccess, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public Map<String,Object> unsetMailAllowedServiceAccess(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailAllowedServiceAccess, "");
         return attrs;
     }
 
@@ -27839,6 +28487,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     public Map<String,Object> unsetMailTrustedSenderListMaxNumEntries(Map<String,Object> attrs) {
         if (attrs == null) attrs = new HashMap<String,Object>();
         attrs.put(Provisioning.A_zimbraMailTrustedSenderListMaxNumEntries, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @return zimbraMailUserStatus, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public String getMailUserStatus() {
+        return getAttr(Provisioning.A_zimbraMailUserStatus, null, true);
+    }
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @param zimbraMailUserStatus new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public void setMailUserStatus(String zimbraMailUserStatus) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailUserStatus, zimbraMailUserStatus);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @param zimbraMailUserStatus new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public Map<String,Object> setMailUserStatus(String zimbraMailUserStatus, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailUserStatus, zimbraMailUserStatus);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public void unsetMailUserStatus() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailUserStatus, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public Map<String,Object> unsetMailUserStatus(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraMailUserStatus, "");
         return attrs;
     }
 
@@ -34357,6 +35077,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     public Map<String,Object> unsetNotes(Map<String,Object> attrs) {
         if (attrs == null) attrs = new HashMap<String,Object>();
         attrs.put(Provisioning.A_zimbraNotes, "");
+        return attrs;
+    }
+
+    /**
+     * nsroledn
+     *
+     * @return zimbraNsroledn, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public String getNsroledn() {
+        return getAttr(Provisioning.A_zimbraNsroledn, null, true);
+    }
+
+    /**
+     * nsroledn
+     *
+     * @param zimbraNsroledn new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public void setNsroledn(String zimbraNsroledn) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraNsroledn, zimbraNsroledn);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * nsroledn
+     *
+     * @param zimbraNsroledn new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public Map<String,Object> setNsroledn(String zimbraNsroledn, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraNsroledn, zimbraNsroledn);
+        return attrs;
+    }
+
+    /**
+     * nsroledn
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public void unsetNsroledn() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraNsroledn, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * nsroledn
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public Map<String,Object> unsetNsroledn(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraNsroledn, "");
         return attrs;
     }
 
@@ -55714,6 +56506,150 @@ public abstract class ZAttrAccount  extends MailTarget {
     }
 
     /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @return zimbraPreferredMailHost, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public String getPreferredMailHost() {
+        return getAttr(Provisioning.A_zimbraPreferredMailHost, null, true);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @param zimbraPreferredMailHost new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public void setPreferredMailHost(String zimbraPreferredMailHost) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailHost, zimbraPreferredMailHost);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @param zimbraPreferredMailHost new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public Map<String,Object> setPreferredMailHost(String zimbraPreferredMailHost, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailHost, zimbraPreferredMailHost);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public void unsetPreferredMailHost() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailHost, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public Map<String,Object> unsetPreferredMailHost(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailHost, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @return zimbraPreferredMailMessageStore, or null if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public String getPreferredMailMessageStore() {
+        return getAttr(Provisioning.A_zimbraPreferredMailMessageStore, null, true);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @param zimbraPreferredMailMessageStore new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public void setPreferredMailMessageStore(String zimbraPreferredMailMessageStore) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailMessageStore, zimbraPreferredMailMessageStore);
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @param zimbraPreferredMailMessageStore new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public Map<String,Object> setPreferredMailMessageStore(String zimbraPreferredMailMessageStore, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailMessageStore, zimbraPreferredMailMessageStore);
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public void unsetPreferredMailMessageStore() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailMessageStore, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public Map<String,Object> unsetPreferredMailMessageStore(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraPreferredMailMessageStore, "");
+        return attrs;
+    }
+
+    /**
      * Allowed domains for Proxy servlet
      *
      * @return zimbraProxyAllowedDomains, or empty array if unset
@@ -59850,6 +60786,78 @@ public abstract class ZAttrAccount  extends MailTarget {
     public Map<String,Object> unsetWebClientShowOfflineLink(Map<String,Object> attrs) {
         if (attrs == null) attrs = new HashMap<String,Object>();
         attrs.put(Provisioning.A_zimbraWebClientShowOfflineLink, "");
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @return zimbraWifi, or -1 if unset
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public int getWifi() {
+        return getIntAttr(Provisioning.A_zimbraWifi, -1, true);
+    }
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @param zimbraWifi new value
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public void setWifi(int zimbraWifi) throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraWifi, Integer.toString(zimbraWifi));
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @param zimbraWifi new value
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public Map<String,Object> setWifi(int zimbraWifi, Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraWifi, Integer.toString(zimbraWifi));
+        return attrs;
+    }
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @throws com.zimbra.common.service.ServiceException if error during update
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public void unsetWifi() throws com.zimbra.common.service.ServiceException {
+        HashMap<String,Object> attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraWifi, "");
+        getProvisioning().modifyAttrs(this, attrs);
+    }
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @param attrs existing map to populate, or null to create a new map
+     * @return populated map to pass into Provisioning.modifyAttrs
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public Map<String,Object> unsetWifi(Map<String,Object> attrs) {
+        if (attrs == null) attrs = new HashMap<String,Object>();
+        attrs.put(Provisioning.A_zimbraWifi, "");
         return attrs;
     }
 

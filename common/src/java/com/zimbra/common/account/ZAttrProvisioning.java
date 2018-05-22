@@ -2872,6 +2872,14 @@ public class ZAttrProvisioning {
     public static final String A_zimbraAccountCalendarUserType = "zimbraAccountCalendarUserType";
 
     /**
+     * This ldap attribute stores the account user city information
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5013)
+    public static final String A_zimbraAccountCity = "zimbraAccountCity";
+
+    /**
      * Deprecated since: 5.0. deprecated in favor of the accountInfo flag.
      * Orig desc: additional account attrs that get returned to a client
      */
@@ -2879,11 +2887,51 @@ public class ZAttrProvisioning {
     public static final String A_zimbraAccountClientAttr = "zimbraAccountClientAttr";
 
     /**
+     * This ldap attribute stores the account user date of birth
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5014)
+    public static final String A_zimbraAccountDateOfBirth = "zimbraAccountDateOfBirth";
+
+    /**
+     * This ldap attribute stores the account user date of retirement
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5015)
+    public static final String A_zimbraAccountDateOfRetirement = "zimbraAccountDateOfRetirement";
+
+    /**
+     * designation
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5026)
+    public static final String A_zimbraAccountDepartment = "zimbraAccountDepartment";
+
+    /**
+     * This ldap attribute stores the account user Expiry Date
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5021)
+    public static final String A_zimbraAccountExpDate = "zimbraAccountExpDate";
+
+    /**
      * Object classes to add when creating a zimbra account object. Useful if
      * you want to add sambaSamAccount etc to zimbra accounts.
      */
     @ZAttr(id=438)
     public static final String A_zimbraAccountExtraObjectClass = "zimbraAccountExtraObjectClass";
+
+    /**
+     * This ldap attribute stores account user middle name
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5017)
+    public static final String A_zimbraAccountMiddleName = "zimbraAccountMiddleName";
 
     /**
      * account status. active - active lockout - no login until lockout
@@ -8410,6 +8458,14 @@ public class ZAttrProvisioning {
     public static final String A_zimbraIsDomainAdminAccount = "zimbraIsDomainAdminAccount";
 
     /**
+     * This ldap attribute determines if the user Employee or not
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5016)
+    public static final String A_zimbraIsEmployee = "zimbraIsEmployee";
+
+    /**
      * whether it is an external user account
      *
      * @since ZCS 8.0.0
@@ -8438,6 +8494,14 @@ public class ZAttrProvisioning {
      */
     @ZAttr(id=132)
     public static final String A_zimbraIsMonitorHost = "zimbraIsMonitorHost";
+
+    /**
+     * This ldap attribute determines if user is newuser or not
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5018)
+    public static final String A_zimbraIsNewUser = "zimbraIsNewUser";
 
     /**
      * Indicates the account is an account used by the system such as spam
@@ -8732,6 +8796,14 @@ public class ZAttrProvisioning {
      */
     @ZAttr(id=20)
     public static final String A_zimbraMailAlias = "zimbraMailAlias";
+
+    /**
+     * This ldap attribute determines the list of services allowed to access
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5020)
+    public static final String A_zimbraMailAllowedServiceAccess = "zimbraMailAllowedServiceAccess";
 
     /**
      * If TRUE, a mailbox that exceeds its quota is still allowed to receive
@@ -9462,6 +9534,14 @@ public class ZAttrProvisioning {
      */
     @ZAttr(id=1002)
     public static final String A_zimbraMailUseDirectBuffers = "zimbraMailUseDirectBuffers";
+
+    /**
+     * This ldap attribute is to store mailuserstatus
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5022)
+    public static final String A_zimbraMailUserStatus = "zimbraMailUserStatus";
 
     /**
      * Maximum number of entries for per user white list. This restricts the
@@ -11877,6 +11957,14 @@ public class ZAttrProvisioning {
     public static final String A_zimbraNotifySSLServerEnabled = "zimbraNotifySSLServerEnabled";
 
     /**
+     * nsroledn
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5023)
+    public static final String A_zimbraNsroledn = "zimbraNsroledn";
+
+    /**
      * Credentials associated with a successfully authorized OAuth Consumer
      *
      * @since ZCS 8.7.0,9.0.0
@@ -12914,6 +13002,22 @@ public class ZAttrProvisioning {
      */
     @ZAttr(id=3022)
     public static final String A_zimbraPrefDisplayTimeInMailList = "zimbraPrefDisplayTimeInMailList";
+
+    /**
+     * This ldap attribute is to store preferredMailHost
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5024)
+    public static final String A_zimbraPreferredMailHost = "zimbraPreferredMailHost";
+
+    /**
+     * This ldap attribute is to store preferredMailMessageStore
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5025)
+    public static final String A_zimbraPreferredMailMessageStore = "zimbraPreferredMailMessageStore";
 
     /**
      * Specifies the meaning of an external sender. &quot;ALL&quot; means
@@ -17165,6 +17269,14 @@ public class ZAttrProvisioning {
      */
     @ZAttr(id=1468)
     public static final String A_zimbraWebGzipEnabled = "zimbraWebGzipEnabled";
+
+    /**
+     * This ldap attribute determines wifi for user account
+     *
+     * @since ZCS 8.8.8
+     */
+    @ZAttr(id=5019)
+    public static final String A_zimbraWifi = "zimbraWifi";
 
     /**
      * XMPP Category of the component

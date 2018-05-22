@@ -9696,4 +9696,60 @@ TODO: delete them permanently from here
 <attr id="5012" name="zimbraCaptchaApiUrl" type="string" cardinality="single" optionalIn="globalConfig,server" flags="serverInherited" since="8.8.8">
 	<desc>This attribute stores the captcha service API url to display and validate captcha</desc>
 </attr>
+
+<attr id="5013" name="zimbraAccountCity" type="string" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited" since="8.8.8">
+ <desc>This ldap attribute stores the account user city information</desc>
+</attr>
+ 
+<attr id="5014" name="zimbraAccountDateOfBirth" type="string" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited" since="8.8.8">
+ <desc>This ldap attribute stores the account user date of birth</desc>
+</attr>
+
+<attr id="5015" name="zimbraAccountDateOfRetirement" type="string" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute stores the account user date of retirement</desc>
+</attr>
+
+<attr id="5016" name="zimbraIsEmployee" type="boolean" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited" since="8.8.8">
+ <desc>This ldap attribute determines if the user Employee or not</desc>
+</attr>
+ 
+<attr id="5017" name="zimbraAccountMiddleName" type="string" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited" since="8.8.8">
+ <desc>This ldap attribute stores account user middle name</desc>
+</attr>
+ 
+<attr id="5018" name="zimbraIsNewUser" type="boolean" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited" since="8.8.8">
+ <desc>This ldap attribute determines if user is newuser or not</desc>
+</attr>
+ 
+<attr id="5019" name="zimbraWifi" type="integer" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute determines wifi for user account</desc>
+</attr>
+
+<attr id="5020" name="zimbraMailAllowedServiceAccess" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute determines the list of services allowed to access</desc>
+</attr>
+
+<attr id="5021" name="zimbraAccountExpDate" type="string" cardinality="single" optionalIn="account,cos" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute stores the account user Expiry Date</desc>
+</attr>
+
+<attr id="5022" name="zimbraMailUserStatus" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute is to store mailuserstatus</desc>
+</attr>
+
+<attr id="5023" name="zimbraNsroledn" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>nsroledn</desc>
+</attr>
+
+<attr id="5024" name="zimbraPreferredMailHost" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute is to store preferredMailHost</desc>
+</attr>
+
+<attr id="5025" name="zimbraPreferredMailMessageStore" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>This ldap attribute is to store preferredMailMessageStore</desc>
+</attr>
+
+<attr id="5026" name="zimbraAccountDepartment" type="string" cardinality="single" optionalIn="account,cos,domain" flags="accountInfo,accountInherited,domainAdminModifiable" since="8.8.8">
+ <desc>designation</desc>
+</attr>
 </attrs>
