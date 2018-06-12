@@ -85,5 +85,18 @@
   <dependency org="zimbra" name="zm-client" rev="latest.integration" /> 
   <dependency org="zimbra" name="zm-native" rev="latest.integration"/>
   <dependency org="org.xmlunit" name="xmlunit-core" rev="2.3.0"/>
+  <dependency org="ant-contrib" name="ant-contrib" rev="1.0b3" />
+  <dependency org="io.jsonwebtoken" name="jjwt" rev="0.7.0"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.9.2"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.9.2"/>
+  <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.9.2"/>
+  <dependency org="com.fasterxml.jackson.dataformat" name="jackson-dataformat-smile" rev="2.9.2" />
+  <dependency org="com.fasterxml.jackson.module" name="jackson-module-jaxb-annotations" rev="2.8.9"/>
+  <dependency org="org.apache.commons" name="commons-text" rev="1.1"/>
+  <dependency org="org.apache.commons" name="commons-lang3" rev="3.7"/>
+  <dependency org="org.apache.commons" name="commons-rng-client-api" rev="1.0"/>
+  <dependency org="org.apache.commons" name="commons-rng-core" rev="1.0"/>
+  <dependency org="org.apache.commons" name="commons-rng-simple" rev="1.0"/>
+  <dependency org="org.python" name="jython-standalone" rev="2.7.1"/>
  </dependencies>
 </ivy-module>
