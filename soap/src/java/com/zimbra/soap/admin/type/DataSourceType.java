@@ -36,4 +36,14 @@ public enum DataSourceType {
                     ", valid values: " + Arrays.asList(DataSourceType.values()), e);
         }
     }
+
+    public static DataSourceType getDataSourceTypeForOAuth2(String type) throws ServiceException {
+        if (type.equals("contact")) {
+            return oauth2contact;
+        } else if (type.equals("calendar")) {
+            return DataSourceType.oauth2calendar;
+        } else {
+            return null;
+        }
+    }
 }
